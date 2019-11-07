@@ -17,4 +17,4 @@ print()
 print("Miles Per Gallon:\t\t" + str(mpg)) 10.0
 print("total gas cost:\t\t" + str(mpg)) 45.0
 print("cost per mile:\t\t" + str(mpg)   0.3
-
+print("bye")
