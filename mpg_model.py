@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 
 # display a welcome message
-print("The Miles Per Gallon program")
+print("The area and permimeter")
 print()
 
 # get input from the user
-miles_driven= float(input("Enter miles driven:\t\t"))
-gallons_used = float(input("Enter gallons of gas used: 15))
+length= float(input("Enter the length: 25 \t\t"))
+width = float(input("Enter the width: 10))
 coat used =float(input)("enter coat per gallon: 3")
 # calculate miles per gallon
 mpg = miles_driven / gallons_used
@@ -14,7 +14,7 @@ mpg = round(mpg, 2)
             
 # format and display the result
 print()
-print("Miles Per Gallon:\t\t" + str(mpg)) 10.0
-print("total gas cost:\t\t" + str(mpg)) 45.0
-print("cost per mile:\t\t" + str(mpg)   0.3
+print("the total area 250:\t\t" + str(mpg))
+print("the total permiter 70:\t\t" + str(mpg)) 
+print("per area and permiter 250 + 70\t\t" + str(mpg)   0.3
 print("bye")
