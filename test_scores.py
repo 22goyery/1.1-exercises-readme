@@ -2,23 +2,39 @@
 
 # display a welcome message
 print("The Test Scores program")
-print(3 test scores)
+print()
 print("Enter 3 test scores")
-print("======================")
+print("enter 'end' to end input
+print("=======================")
+# initalize variables
+counter = 0
+score_total = 0
+test score = 0
 
-# get scores from the user
-total_score = 255 += int(input) # initialize the variable for accumulating scores
-total_score += int(input("Enter test score: 70 + 5 "))
-total_score += int(input("Enter test score: 42 + 43 "))
-total_score += int(input("Enter test score: 90 + 5"))
+while test_score != "end"
+test_score =""
+while test_score != "end"
+    test_score str "end"            
+   if int(test_score) >= 0 and int(test_score) <= 100:
+   score_total += int(test_score)
+   counter =+ 1
+       elif test_score == "end"
+          break
+        else:
+       print("test score must be from 0 through 100. score discarded. try again.")
 
-# calculate average score
-print("average score 42 + 43 )
-             
-# format and display the result
-print("======================")
-print("75, 85, 95")
-print("total score:128 +127 ")
+       # calculate average score
+       average_score = round(score_total / counter)
+
+       # format and display the result
+       print("=================")
+       print("total score",score_total,
+       "\nAverage score:", score total
+   print()
+      print("bye")
+    
+
+     
 
 
 
