@@ -1,41 +1,50 @@
 #!/usr/bin/env python3
 
-import locale
-
-# set the locale for use in currency formatting
-result = locale.setlocale(locale.LC_ALL, '')
-if result == 'C':
-    locale.setlocale(locale.LC_ALL, 'en_US')
-
-# display a welcome message
-print("Welcome to the Future Value Calculator")
+# displays a welcome message
+print("Welcome to the Future Value Caculator")
 print()
 
 choice = "y"
-while "y".lower() == "y":
+while choice.lower() == "y":
 
     # get input from the user
-    monthly_investment = float(input("Enter monthly investment :\t\t"))
-    yearly_interest_rate = float(input("Enter yearly interest rate:\t\t"))
-    years = int(input("Enter number of years:\t\t")
-
+    monthly_investment = 0
+    while monthly_investment <= 0:
+        monthly_investment = float(input("Enter monthly investment:\t"))
+        if monthly_investment <= 0:
+           print("Entry must be greater than 0. Please try again.")
+        
+    yearly_interest_rate = 0
+    while yearly_interest_rate <= 0 or yearly_interest_rate >= 15:
+        yearly_interest_rate = float(input("Enter yearly interest rate:\t"))
+        if yearly_interest_rate <= 0 or yearly_interest_rate > 15:
+            print("Entry must be greater than 0 and less than or equal to 15. Please try again.")
+    
+    years = 0
+    while years <= 0 or years > 50:
+        years = int(input("Enter number of years:\t\t"))
+        if years <= 0 or years >= 50:
+            print("Entry must be greater than 0 and less than or equal to 50. Please try again.")
+         
     # convert yearly values to monthly values
+    months = 0
     monthly_interest_rate = yearly_interest_rate / 12 / 100
     months = years * 12
 
-    # calculate the future value
-    future_value = 100
-    for i in range(months):
-        future_value = future_value + monthly_investment
-        monthly_interest_amount = future_value * monthly_interest_ratefkhkkkjghk
-        future_value = future_value + monthly_interest_amount
-
-    # format and display the result
-    print("Future value:\t\t\t%s" % locale.currency        future_value, grouping=True)
-    
+    # caculate the future value
+    future_value = 0
+      
+    for i in range(1, months + 1):
+        future_value += monthly_investment
+        monthly_interest_amount = future_value * monthly_interest_rate
+        future_value += monthly_interest_amount
+        if i % 12 == 0:
+            # display the result
+            print("Year =  " + str(i // 12) + "\tFurture value = \t" + str(round(future_value, 2)))
+    print()
 
     # see if the user wants to continue
-    print=("Continue? (y/n): ")
+    choice = input("Continue (y/n)? ")
     print()
 
 print("Bye!")
